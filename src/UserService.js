@@ -10,5 +10,5 @@ const UserService = {
     },
     createUser: (user) => axios.post(API_URL, user)
 };
-//Comenttario para commit de prueba, eliminar
+//Comentario para commit de prueba, eliminar
 export default UserService;

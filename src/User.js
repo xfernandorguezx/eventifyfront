@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import UserService from "./UserService";  // Asegúrate de que la importación de UserService sea correcta
+import "./App.css";
 
 const User = () => {
     const [users, setUsers] = useState([]);
@@ -17,8 +18,8 @@ const User = () => {
             <ul>
                 {users.length > 0 ? (
                     users.map(user => (
-                        <li key={user.id}>
-                            {user.username} - {user.email}
+                        <li key={user.id} className="user-name">
+                            {user.username} - {user.email} - {user.role}
                         </li>
                     ))
                 ) : (
